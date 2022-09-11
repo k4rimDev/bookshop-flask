@@ -1,0 +1,15 @@
+Answer:
+
+1. What is Bootstrap?
+    Bootstrap populyar olan CSS Frameworklərdən biridir.
+    Bootstrap responsive dizayn üçün yaradılıb.
+    Bootstrap hazır classlar vasitəsilə eləməntələrə dizayn verə bilər.
+    Bootstrap da bəzi hazır elementlər var ki, rahatlıqla koda əlavə etmək olur.
+
+2. How is it works?
+    Bootstrap CDN vasitəsilə proyektə əlavə olunur.
+    Və uyğun classları elementlərə verməklə onun dizaynını dəyişir.
+
+3. Could you create package like Bootstrap? How?
+    Bəli yarada bilərəm, özüm hər hansı bir css və js faylı yaradıb ora default olaraq bəzi class lar verib və onlara uyğun özəlliklər verərdim.
+    Və hər dəfə hər hansı bir proyekt işləyərəkən həmin faylları öz proyektimə əlavə etməklə o xüsusiyyətlərdən istifadə edə bilərəm. 

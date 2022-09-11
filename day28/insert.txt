@@ -1,0 +1,121 @@
+flask shell ->
+
+1)---------------insert genre table------------------------
+
+from models import * 
+genre1 = Genre(name="Roman")
+Genre.add(genre1)
+genre2 = Genre(name="Science")
+Genre.add(genre2)
+genre3 = Genre(name="Psychology")
+Genre.add(genre3)
+
+2)----------------insert language table---------------------
+
+from models import *
+lang1 = Language(language="English")
+Language.add(lang1)
+
+lang2 = Language(language="Azerbaijani")
+Language.add(lang2)
+
+lang3 = Language(language="Russian")
+Language.add(lang3)
+
+3)---------------insert book table----------------------
+
+from models import *
+
+book1 = Book(title='Sefillər', author='Viktor Hugo', price=12.0, description='some text',image_url='../static/images/sefiller-book.jpeg',stock=90, publisher='Qanun neshriyyat')
+Book.add(book1)
+
+book2 = Book(title='Inkoqnito', author='David Eagleman', price=56.8, description='some text',image_url='../static/images/inkonito-book.jpg',stock=40, publisher='Bertelsmann')
+Book.add(book2)
+
+book3 = Book(title='1984', author='George Orwell', price=100, description='some text',image_url='../static/images/1984-book.jpg',stock=1200, publisher='Penguin Random House')
+Book.add(book3)
+
+book4 = Book(title='Menim adim qirmizi', author='Orhan Pamuk', price=9.4, description='some text',image_url='../static/images/menimadimqirmizi-book.jpeg',stock=120, publisher='Thomson Reuters')
+Book.add(book4)
+
+book5 = Book(title='Xeyanet', author='Elxan Elatli', price=34.9, description='some text',image_url='../static/images/xeyanet-book.jpeg',stock=500, publisher='McGraw-Hill Education')
+Book.add(book5)
+
+book6 = Book(title='Emosianal', author='Daniel Goleman', price=23.8, description='some text',image_url='../static/images/emosianal-book.jpeg',stock=2000, publisher='RELX')
+Book.add(book6)
+
+
+
+4)----------------insert into genre__book------------------
+genre__book1 = Genre_Book(genre_id=1, book_id=1)
+Genre_Book.add(genre__book1)
+
+genre__book2 = Genre_Book(genre_id=2, book_id=1)
+Genre_Book.add(genre__book2)
+
+genre__book3 = Genre_Book(genre_id=1, book_id=2)
+Genre_Book.add(genre__book3)
+
+genre__book4 = Genre_Book(genre_id=2, book_id=3)
+Genre_Book.add(genre__book4)
+
+genre__book5 = Genre_Book(genre_id=3, book_id=4)
+Genre_Book.add(genre__book5)
+
+genre__book6 = Genre_Book(genre_id=1, book_id=5)
+Genre_Book.add(genre__book6)
+
+genre__book7 = Genre_Book(genre_id=2, book_id=6)
+Genre_Book.add(genre__book7)
+
+genre__book8 = Genre_Book(genre_id=3, book_id=5)
+Genre_Book.add(genre__book8)
+
+
+
+
+
+5)----------------insert into language__book table----------------
+
+language__book1 = Language_Book(language_id=3, book_id=1)
+Language_Book.add(language__book1)
+
+language__book2 = Language_Book(language_id=2, book_id=2)
+Language_Book.add(language__book2)
+
+language__book3 = Language_Book(language_id=1, book_id=2)
+Language_Book.add(language__book3)
+
+language__book4 = Language_Book(language_id=2, book_id=3)
+Language_Book.add(language__book4)
+
+language__book5 = Language_Book(language_id=3, book_id=4)
+Language_Book.add(language__book5)
+
+language__book6 = Language_Book(language_id=1, book_id=5)
+Language_Book.add(language__book6)
+
+language__book7 = Language_Book(language_id=2, book_id=4)
+Language_Book.add(language__book7)
+
+language__book8 = Language_Book(language_id=2, book_id=6)
+Language_Book.add(language__book8)
+
+language__book9 = Language_Book(language_id=1, book_id=6)
+Language_Book.add(language__book9)
+
+
+
+
+
+
+
+
+
+
+select book.title, book.author, book.description, book.image_url, book.stock, book.publisher, genre.name, language.language
+from book 
+inner join genre__book on book.id = genre__book.book_id
+inner join genre on genre__book.genre_id = genre.id
+inner join language__book on book.id = language__book.book_id
+inner join language on language__book.language_id = language.id

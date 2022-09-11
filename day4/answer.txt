@@ -1,0 +1,7 @@
+Amswers:
+
+1. What are the advantages of using Flex?
+
+Flexbox bizə elementləri istədiyimiz formada yerləşdirmək imkanı verir.
+Eyni zamanda biz elemenetlər arasında olan məsafəni, onların düzülüş ardıcıllığını, ölçülərini, həm eninə həm də uzununa uyğun olaraq align-items, justify-content özəlliyi vasitəsilə parent'ə yaxın və ortada yerləşdirmək imkanı verir.
+Flex'in mühüm özəlliklərindən biri də responsive dizayna daha yaxın olmasıdır.

@@ -1,0 +1,15 @@
+Answers:
+
+1. What is JavaScript and what does it do? (explain broadly)
+    JavaScript high level proqramlaşdırma dili olub veb səhifələri daha interaktiv etmək üçün işlədilir.
+    JavaScript öyrənilməsi asan, sürətli, istifadəsi rahat olan dildir.
+    Daha çox front hissədə istifadə olunmasına baxmayaraq back hissədə də istifadə olunur.
+    İnterpretasiya dili olduğuna görə digər dillər kimi compiler ə ehtiyac duymur, brauzerlərdə icra olunur.
+    JavaScript obyekt yönümlü dil olduğuna görə plimorfizm, enkapsulasiya, inheritens özəlliklərini dəstəkləyir.
+    JavaScript in zəngin frameworləri var, məsələn React, Angular, Vue bunlara misal ola bilər.
+
+
+2. Could we create today websites without JavaScript? Why?
+    Hal-hazırda biz JavaScript in köməyi olmadan bəzi şeyləri eliyə bilərik, məsələn animasiya, transition, hover effektlərini CSS ilə edə bilərik.
+    Amma bəzi şeylər varki onları CSS ilə etmək olmur.
+    Bunların bəzilərini Bootstrap vasitəsilə etmək olur.

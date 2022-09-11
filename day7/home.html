@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Home Page</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">KİTAB MAĞAZASI</a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Ana səhifə</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Haqqımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kateqoriyalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ayın kitabı</a>
+                        </li>
+                        <li class="nav-item dropdown" style="width: 170px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                İstifadəçi
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Section -->
+    <main class="main">
+
+        <!-- Carusel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/images/book_slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mağazamıza xoş gəlmisiz</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/images/book_slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mağazamıza xoş gəlmisiz</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/images/book_slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mağazamıza xoş gəlmisiz</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+
+    <!-- Flex -->
+    <section class="books w-75 mx-auto py-5">
+        <div class="d-flex flex-column align-items-center">
+            <div class="card mb-5" style="width: 18rem;">
+                <img src="../assets/images/Inkognito.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Inkognito 1</h5>
+                  <p class="card-text">David Eagleman</p>
+                  <a href="./product.html" class="btn btn-primary">Ətraflı</a>
+                </div>
+              </div>
+
+              <div class="card mb-5" style="width: 18rem;">
+                <img src="../assets/images/Inkognito.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Inkognito 1</h5>
+                  <p class="card-text">David Eagleman</p>
+                  <a href="./product.html" class="btn btn-primary">Ətraflı</a>
+                </div>
+              </div>
+
+              <div class="card mb-5" style="width: 18rem;">
+                <img src="../assets/images/Inkognito.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Inkognito 1</h5>
+                  <p class="card-text">David Eagleman</p>
+                  <a href="./product.html" class="btn btn-primary">Ətraflı</a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="h-100 p-5 text-white py-5" style="background-image: url(../assets/images/jumbotron.jpg);">
+            <h2>Kitab müzakirəsi</h2>
+            <p>
+                Oxuduğunuz kitabları müzakirə edəbilmək üçün sizə yəni bir platforma təklif edirik. Hər ay yeni yeni kitablar onlarca oxuyucu tərəfindən müzakirə olunacaq.
+            </p>
+            <button class="btn bg-warning" type="button">Araştır</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-info p-3 text-center text-white">
+        <p class="footer-text mb-0">
+            Copyright © E-mağaza layihəsi
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

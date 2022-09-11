@@ -1,0 +1,61 @@
+create table Book_info(
+    id int unsigned Auto_Increment primary key,
+    title varchar(250) not null,
+    author varchar(100) not null,
+    published_at date,
+    exist boolean default true,
+    language varchar(250),
+    genre varchar(200),
+    price decimal(6,2) default 10.00
+)
+create table Author(
+    id int unsigned Auto_Increment primary key,
+    name varchar(250) not null,
+    description varchar(250)
+)
+create table Genre(
+    id int unsigned Auto_Increment primary key,
+    name varchar(250) not null
+)
+create table Lang(
+    id int unsigned Auto_Increment primary key,
+    lang_code int not null,
+    lang_name varchar(250) not null
+)
+insert into Book_info (title, author ,published_at,exist,language,genre,price)
+values
+("Lord of the Rings", "J.K.Rowling", "1943-08-11", True,"English", "Fantastic" , 58.39),
+("Hobbit" , "J.K.Rowling" , "1950-11-11", True,"English", "Fantastic",  60.59),
+("Fear","Stephan Zwaig","1937-06-19",True,"English","Psychological", 10.59),
+("1984","George Orwell","1997-01-16",False,"English","Fantastic",  33.59),
+("Sherlock Holmes - Goy Yaqut ","Artur Conan Doyle","1972-08-21",True,"Azerbaijani","Dedective", 45.59)
+insert  into Author (name, description)
+values
+("J.K.Rowling","He is a famous  British writer"),
+("Stephan Zwaig", "He is a famous  Austrian writer"),
+("George Orwell", "He is a famous Turkish writer"),
+("Artur Conan Doyle","He is a famous Finnish writer"),
+("Celil Memmedquluzadeh", "He is a famous Azerbaijanian writer")
+insert  into Genre (name)
+values
+("Fantastic"),
+("Psychological"),
+("Dedective"),
+("Comedy")
+insert  into Lang (lang_code, lang_name)
+values
+(0001, "English"),
+(0010, "Azerbaijani"),
+(0011, "Russian")
+*****************************************************
+select Book_info.title,Book_info.author,Book_info.genre,Author.description
+from Book_info
+inner join Author on Book_info.author=Author.name;
+*****************************************************
+select Book_info.title,Book_info.author,Book_info.price,Lang.lang_name
+from Book_info
+inner join Lang on Book_info.language=Lang.lang_name;
+*****************************************************
+select Book_info.title,Book_info.author,Book_info.exist,Genre.name
+from Book_info
+inner join Genre on Book_info.genre=Genre.name

@@ -1,0 +1,37 @@
+1. What is the GIT?
+
+Git, açıq mənbə və kommersiya proqram təminatının inkişafı üçün geniş istifadə olunan paylanmış versiyaya nəzarət sisteminin nümunəsidir. 
+DVCS-lər layihənin hər bir faylına, branch'nə və iterasiyasına tam giriş imkanı verir və hər bir istifadəçiyə bütün dəyişikliklərin tam commit'inə giriş imkanı verir. 
+Bir vaxtlar məşhur olan mərkəzləşdirilmiş versiya idarəetmə sistemlərindən fərqli olaraq, Git kimi DVCS-lərin mərkəzi repozitoriya ilə daimi əlaqəyə ehtiyacı yoxdur. 
+Proqramçılar arasında işlərin əlaqələndirilməsi üçün hazırlanmışdır, lakin hər hansı bir fayl dəstindəki dəyişiklikləri izləmək üçün istifadə edilə bilər.
+
+2. Why we use it?
+
+Git, fayllarda etdiyiniz dəyişiklikləri izləyir, beləliklə, edilənlər barədə qeydiniz var və lazım olduqda, xüsusi versiyalara qayıda bilərsiniz. 
+Git həm də əməkdaşlığı asanlaşdırır, birdən çox insan tərəfindən edilən dəyişikliklərin hamısını bir mənbədə birləşdirməyə imkan verir.
+
+3. What is the GITHub?
+
+GitHub proqram tərtibatçıları üçün veb əsaslı versiyaya nəzarət və əməkdaşlıq platformasıdır. 
+GitHub layihənin mənbə kodunu saxlamaq və həmin koda edilən bütün dəyişikliklərin tam tarixini izləmək üçün istifadə olunur.
+
+4. How the web browser works?
+
+Brauzer kompüterinizdə və ya telefonunuzda veb-brauzerdə veb-səhifəyə baxdığınız zaman baş verənlərin sadələşdirilmiş görünüşünü təmin edir.
+Brauzer HTML teqlərini göstərmir, lakin onlardan sənədin necə göstəriləcəyini müəyyən etmək üçün istifadə edir.
+İstifadəçi veb ünvanına (URL) daxil olur, brauzer sənədi götürür və onu təqdim edir
+
+5. What are HTML tags for?
+
+HTML teqi HTML sənədində HTML elementinin başlanğıcını və sonunu göstərmək üçün istifadə olunan işarələmə dilinin bir parçasıdır.
+HTML elementinin bir hissəsi kimi, HTML teqləri veb brauzerlərə HTML sənədlərini veb səhifələrə çevirməyə kömək edir. 
+Məsələn, mətn məzmununu paraqraf elementlərinə uyğunlaşdırmaq üçün <p> teqi, şəkil elementlərini yerləşdirmək üçün isə <img> teqi istifadə olunur.
+
+
+6. What are Attributes for?
+
+Atributlar element haqqında əlavə məlumat verir.
+Atributlar şəkilin eni və hündürlüyü kimi elementin əlavə xüsusiyyətlərini və ya xassələrini müəyyən edir. 
+Atributlar həmişə başlanğıc teqində (və ya açılış teqində) müəyyən edilir və adətən name="value" kimi ad/dəyər cütlərindən ibarətdir. 
+Atribut dəyərləri həmişə dırnaq içərisində olmalıdır. 
+Həmçinin, müəyyən elementlər üçün bəzi atributlar tələb olunur. Məsələn, <img> teqində src və alt atributları olmalıdır və ya <a> teqində href atributu onun yönəldəcəyi linki göstərir

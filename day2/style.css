@@ -1,0 +1,149 @@
+
+/* Header section*/
+.header{
+    padding: 34px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+}
+.header-link{
+    font-family: 'Lobster', cursive;
+    font-size: 49px;
+    line-height: 61px;
+    text-decoration: none;
+    color: #109E97;
+}
+
+/* Info section */
+.info{
+    font-family: 'Roboto', sans-serif;  
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000;
+}
+.info-title{
+    font-size: 23px;
+    line-height: 27px;
+}
+.info-costs span:first-child{
+    font-size: 25px;
+    line-height: 29px;
+    color: #008000;
+}
+.info-costs span:last-child{
+    font-size: 15px;
+    line-height: 18px;
+    color: #FF0000;
+    text-decoration: line-through;
+}
+.info-costs{
+    margin-bottom: 20px;
+}
+.info-desc{
+    background: #000000;
+    color: #fff;
+    padding: 43px;
+    text-align: right;
+}
+.info-desc__header{
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.info-desc__text{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+}
+.font-bold{
+    font-weight: bold;
+}
+.text-underlined{
+    text-decoration: underline;
+}   
+
+/* Properties style */
+.porperties{
+    font-family: 'Roboto', sans-serif;  
+    padding: 21px 0 44px 0;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+}
+.porperties table tr{
+    height: 36px;
+}
+.porperties-title{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.comments{
+    font-family: 'Roboto', sans-serif;  
+    text-align: center;
+    background-image: url(../assets/images/Inkognito.png), url(../assets/images/Inkognito.png);
+    background-size: 300px 478px;
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 34px;
+    padding-top: 20px;
+}
+
+.comments-title{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.comments label{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+textarea{
+    margin-bottom: 22px;
+}
+
+.comments-input__submit{
+    background: #109E97;
+    border: 2px solid #767676;
+    padding: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Socials style */
+.social{
+    font-family: 'Roboto', sans-serif;  
+    padding-bottom: 44px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+.social-lists{
+    list-style: none;
+}
+.social-list__item{
+    margin-bottom: 2px;
+}
+.social-list__item a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0000EE;
+}
+
+/* Footer styles */
+.footer{
+    padding: 36px;
+    background: #109E97;
+}
+.footer-text{
+    font-family: 'Roboto', sans-serif;  
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}

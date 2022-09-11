@@ -1,0 +1,136 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header section */
+.main-list__item:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.main-list__item:hover .main-list__link{
+    color: #109E97;
+}
+
+.main-list__item .main-list__link:active{
+    color: #0E524E;
+}
+
+
+/* Intro section */
+.main{
+    max-width: 944px;
+    margin: 0 auto;
+}
+.main-intro{
+    background-image: url('../assets/images/paper_bg.jpg');
+    padding: 60px 9px;
+    margin-bottom: 48px;
+}
+
+.main-intro__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-intro__img{
+    width: 300px;
+    height: 390px;
+}
+
+.main-intro__info p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.main-intro__info > p:nth-child(1){
+    max-width: 505px;
+}
+
+.main-intro__info > p:nth-child(2){
+    max-width: 533px;
+    margin-bottom: 6px;
+}
+
+.main-intro__info > p:nth-child(4){
+    margin-bottom: 29px;
+    max-width: 505px;
+    margin-top: 9px;
+}
+
+.main-intro__info-link{
+    font-family: 'Roboto', sans-serif;  
+    font-size: 15px;
+    line-height: 23px;
+    text-decoration: none;
+    padding: 10px 19px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #109E97;
+    border: 1px solid #109E97;
+    border-radius: 4px;
+}
+
+.main-intro .social-lists{
+    position: fixed;
+    top: 300px;
+    right: 10px;
+}
+
+/* Books Section */
+.books{
+    margin-bottom: 78px;
+}
+
+.books-title{
+    font-family: 'Roboto', sans-serif;  
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 52px;
+}
+
+.books-inner{
+    border: 2px solid #916A6A;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 32px 52px 2px;
+    /* align-items: center; */
+}
+
+.books-item{
+    border: 1px solid #109E97;
+    margin-bottom: 30px;
+    padding: 31px 51px;
+    text-align: center;
+}
+
+.books-img{
+    width: 150px;
+    height: 227px;
+    margin-bottom: 12px;
+}
+
+.books-item__info{
+    font-family: 'Roboto', sans-serif;  
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.books-item__link{
+    font-family: 'Roboto', sans-serif;  
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #0000EE;
+}

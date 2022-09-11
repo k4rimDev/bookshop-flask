@@ -1,0 +1,12 @@
+Answers:
+
+1. Why we need CSS reset?
+    Reset Css HTML elementlərinin style' larını sıfırlayır. 
+    Default olaraq HTML teqlerinin bəzi göstəriciləri olur, məsələn padding, margin, font-size.
+    Biz bunun qarşısını Reset CSS vasitəsilə alırıq.
+    Reset CSS link vasitəsilə HTMLfaylına əlavə olunur.
+
+
+2. What are the advantages of using fonts instead of images as icons?
+    Burda bir neçə aspekt var, məsələn font ikonlar estetikdir, çünki font ikonlar vektor olduqlarına görə yüksək sıxlıqlı piksellərdə belə yaxşı görünür.
+    Biz onların ölçülərini istədiyimiz kimi dəyişə bilərik, heç bir editora ehtiyac qalmır.

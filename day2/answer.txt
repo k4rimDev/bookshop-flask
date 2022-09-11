@@ -1,0 +1,15 @@
+1. What does CSS do?
+
+answer: CSS (Cascading style sheet) web saytların daha səliqəli görünməsini təmin edir. 
+CSS HTML elementlərinin necə görünəcəyini təmin edir.
+Birdən çox elementə eyni dizayn vermək olur.
+Bir neçə HTML səhivəsinə dizayn vermək üçün istifadə olunur.
+CSS vasitəsilə biz JS'siz elementlərə animasiya, transition effekti verə bilərik. 
+Eyni zamanda elementlərin ölçülərini, vəziyətini dəyişməyə imkan verir.
+
+
+
+2. What are CSS selectors for?
+
+answer: CSS selectorları vasitəsilə biz dizayn eləmək istədiyimiz HTML elementlərini seçirik.
+CSS selectorları bir neçə formada ola bilər, məsələn sadə selektorlar (HTML elementləri), klas selektorlar, id selektorlar, atribut selektorlar.

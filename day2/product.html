@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lobster font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Kitab Mağazası</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="./index.html" class="header-link">
+            Kitab Mağazası
+        </a>
+    </header>
+
+
+    <main>
+
+        <section class="info">
+            <h2 class="info-title">
+                David Eagleman - incognito (Beyninin gizli həyatı)
+            </h2>
+
+            <p class="info-costs">
+                <span>12.00 AZN </span> 
+                <span>15.00 AZN</span>
+            </p>
+            <img src="../assets/images/Inkognito.png" alt="" class="img" style="width: 200px; height: 302px;">
+
+            <div class="info-desc">
+                <h3 class="info-desc__header">
+                    Qısa Məzmun
+                </h3>
+                <p class="info-desc__text">
+                    Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə edilən və indidən klassik əsərə çevrilən bu kitabı <span class="font-bold">beynin sirli</span> dünyasına təcrübələr, elmi biliklər və tarixi faktlar işığında səyahət edir. Kitab tibbi mövzuda olsa da, müəllif yazarlıq məharətini və zəngin biliyini birləşdirərək elmi faktları sadə və müqayisəli dillə oxucularına təqdim edir. Müəllif əsər boyu sədaqət geni, qumarbazlara çevrilən parkinson xəstələri, gen-mühit əlaqəsi, <span class="text-underlined">“yaxşı”</span> və <span class="text-underlined">“pis”</span> gen, şüuraltı və qərarvermə mexanizmi, məsuliyyət anlayışı, beynin insan həyatında rolu kimi bir çox mövzulara toxunur. Alim bu mövzuların beyinlə əlaqəsini izah etməklə kifayətlənmir, beyinlə bağlı müxtəlif formullar və modellər irəli sürür. İnsan psixologiyası və davranışlarına neyron və gen prizmasından baxmağı öyrədir. Elmi-populyar dildə yazılmış bu kitab xüsusən müəllimlər, psixoloqlar, valideynlər, həkimlər üçün mühüm bilikləri ehtiva edir.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="porperties">
+            <h3 class="properties-title">
+                Xüsusiyyətlər
+            </h3>
+
+            <table style="width: 100%; " border="1">
+                <tr>
+                    <th>
+                        Xüsusiyyət
+                    </th>
+                    <th>
+                        Açıqlama
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Dil:
+                    </td>
+                    <td>
+                        Azərbaycanca
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Janr:
+                    </td>
+                    <td>
+                        Psixologiya
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Müəllif:
+                    </td>
+                    <td>
+                        David Eagleman
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nəşriyyat:
+                    </td>
+                    <td>
+                        Qanun Nəşriyyatı
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+
+        <section class="comments">
+            <h3 class="comments-title">
+                Şərh yaz
+            </h3>
+
+            <form action="/" class="form">
+
+                <label for="name">
+                    Tam adınız:
+                </label>
+                <br>
+                <input type="text" name="name" id="">
+                <br><br>
+    
+    
+                <label for="check">
+                    Bu kitabı oxumusunuzmu?
+                </label>
+                <input type="checkbox" name="check" id="">
+                <br>
+                <br>
+    
+    
+                <label for="date">
+                    Nə vaxt oxumusunuz?
+                </label>
+                <input type="date" name="date" id="">
+    
+                <br>
+                <br>
+    
+    
+                <label for="language">
+                    Hansi dilde oxumusunuz?
+                </label>
+                <select name="language" id="">
+                    <option value="">
+                        Azərbaycan
+                    </option>
+                    <option value="">
+                        İngilis
+                    </option>
+                    <option value="">
+                        Rus
+                    </option>
+                </select>
+                <br>
+                <br>
+    
+                <label for="range">
+                    Qiymətləndirmə
+                </label>
+                <input type="range" name="range" id="">
+                <br>
+                <br>
+    
+                <label for="text">
+                    Şərhiniz:
+                </label>
+                <br>
+                <textarea name="text" id="" cols="30" rows="10"></textarea>
+    
+                <br>
+    
+                <input type="submit" value="Göndər" class="comments-input__submit">
+
+            </form>
+        </section>
+
+
+        <section class="social">
+            <ul class="social-lists">
+                <li class="social-list__item">
+                    <a href="#">facebook</a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#">youtube</a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#">instagram</a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#">linkedin</a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#">google</a>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer-text">
+            2020 &copy; Bütün haqlar qorunur
+        </p>
+    </footer>
+</body>
+</html>

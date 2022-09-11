@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./reset.css">
+
+    <!-- GLobal CSS -->
+    <link rel="stylesheet" href="./global.css">
+
+    <!-- Lobster font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="./product.css">
+    <title>Məhsullar</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-link">
+            <a href="./index.html" class="header__title" id="to-top">
+                Kitab Mağazası
+            </a>
+        </div>
+
+        <nav class="main-nav__menu">
+            <ul class="main__lists">
+                <li class="main-list__item">
+                    <a href="#" class="main-list__link">
+                        Ana səhifə
+                    </a>
+                </li>
+
+                <li class="main-list__item">
+                    <a href="#" class="main-list__link">
+                        Haqqımızda
+                    </a>
+                </li>
+
+                <li class="main-list__item">
+                    <a href="#" class="main-list__link">
+                        Kateqoriyalar
+                    </a>
+                </li>
+
+                <li class="main-list__item">
+                    <a href="#" class="main-list__link">
+                        Məhsullar
+                    </a>
+                </li>
+
+                <li class="main-list__item">
+                    <a href="#" class="main-list__link">
+                        Əlaqə
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="intro">
+            <div class="intro__inner">
+                <div class="intro-pictures">
+                    <img src="../assets/images/Inkognito.png" alt="" class="intro-img">
+                </div>
+    
+                <div class="intro__info">
+                    <div class="intro__info-titles">
+                        <h2 class="intro-title">
+                            David Eagleman - incognito (Beyninin gizli həyatı)
+                        </h2>
+            
+                        <p class="intro-costs">
+                            <span>12.00 AZN </span> 
+                            <span>15.00 AZN</span>
+                        </p>
+                    </div>
+        
+                    <div class="intro-desc">
+                        <h3 class="intro-desc__header">
+                            Qısa Məzmun
+                        </h3>
+                        <p class="intro-desc__text">
+                            Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə edilən və indidən klassik əsərə çevrilən bu kitabı <span class="font-bold">beynin sirli</span> dünyasına təcrübələr, elmi biliklər və tarixi faktlar işığında səyahət edir. Kitab tibbi mövzuda olsa da, müəllif yazarlıq məharətini və zəngin biliyini birləşdirərək elmi faktları sadə və müqayisəli dillə oxucularına təqdim edir. Müəllif əsər boyu sədaqət geni, qumarbazlara çevrilən parkinson xəstələri, gen-mühit əlaqəsi, <span class="text-underlined">“yaxşı”</span> və <span class="text-underlined">“pis”</span> gen, şüuraltı və qərarvermə mexanizmi, məsuliyyət anlayışı, beynin insan həyatında rolu kimi bir çox mövzulara toxunur.
+                            Kitab tibbi mövzuda olsa da, müəllif yazarlıq məharətini və zəngin biliyini birləşdirərək elmi faktları sadə və müqayisəli dillə oxucularına təqdim edir. Müəllif əsər boyu sədaqət geni, qumarbazlara çevrilən parkinson xəstələri, gen-mühit əlaqəsi, <span class="text-underlined">“yaxşı”</span> və <span class="text-underlined">“pis”</span> gen, şüuraltı və qərarvermə mexanizmi, məsuliyyət anlayışı, beynin insan həyatında rolu kimi bir çox mövzulara toxunur.
+                        </p>
+                        <button class="intro-basket">Səbətə əlavə et</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="properties">
+            <h3 class="properties-title">
+                Xüsusiyyətlər
+            </h3>
+
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        Dil:
+                    </td>
+                    <td>
+                        Azərbaycanca
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Janr:
+                    </td>
+                    <td>
+                        Psixologiya
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Müəllif:
+                    </td>
+                    <td>
+                        David Eagleman
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nəşriyyat:
+                    </td>
+                    <td>
+                        Qanun Nəşriyyatı
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+
+        <section class="comments">
+            <h3 class="comments-title">
+                Şərh yaz
+            </h3>
+
+            <div class="comments__inner">
+
+                <!-- Img -->
+                <!-- <img src="../assets/images/Inkognito.png" alt="Inkognito" class="comments__img"> -->
+
+                <!-- Form -->
+                <form action="/" class="comments__form">
+
+                    <label for="name">
+                        Tam adınız:
+                    </label>
+                    <br>
+                    <input type="text" name="name" id="">
+                    <br><br>
+        
+        
+                    <label for="check">
+                        Bu kitabı oxumusunuzmu?
+                    </label>
+                    <input type="checkbox" name="check" class="checkbox">
+                    <br>
+                    <br>
+        
+        
+                    <label for="date">
+                        Nə vaxt oxumusunuz?
+                    </label>
+                    <input type="date" name="date" id="">
+        
+                    <br>
+                    <br>
+        
+        
+                    <label for="language">
+                        Hansı dildə oxumusunuz?
+                    </label>
+                    <select name="language" id="">
+                        <option value="">
+                            Azərbaycan
+                        </option>
+                        <option value="">
+                            İngilis
+                        </option>
+                        <option value="">
+                            Rus
+                        </option>
+                    </select>
+                    <br>
+                    <br>
+        
+                    <label for="range">
+                        Qiymətləndirmə
+                    </label>
+                    <input type="range" name="range" id="">
+                    <br>
+                    <br>
+        
+                    <label for="text">
+                        Şərhiniz:
+                    </label>
+                    <br>
+                    <textarea name="text" id="" cols="30" rows="10"></textarea>
+        
+                    <br>
+        
+                    <input type="submit" value="Göndər" class="comments-input__submit">
+    
+                </form>
+
+                <!-- Img -->
+                <!-- <img src="../assets/images/Inkognito.png" alt="Inkognito" class="comments__img"> -->
+            </div>
+        </section>
+
+
+        <section class="social">
+            <ul class="social-lists">
+                <li class="social-list__item">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="#to-top"><i class="fas fa-angle-double-up"></i></a>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer-text">
+            2020 &copy; Bütün haqlar qorunur
+        </p>
+    </footer>
+</body>
+</html>

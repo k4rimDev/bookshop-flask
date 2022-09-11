@@ -1,0 +1,15 @@
+Answers:
+
+1. What was the most interesting topic from what you have learned so far? (Why)
+    Mənə görə ən maraqlı mövzular flexbox və git idi.
+    Çünki flexbox vasitəsilə biz vebsaytları daha rahat yığa bilir, daha rahat responsive dizayn verə bilirik.
+    Eyni zamanda flexbox vasitəsilə elementlərin yerini parent daxilində rahatlıqla dəyişə bilirik.
+    Git isə bizə real proyektlərlə işləmək imkanı yaradır, onun vasitəsilə biz öz kodlarımızı rahatlıqla saxlaya bilərik, üzərində dəyişiklik edə bilərik.
+    Ən əsası Git ilə işləmək bizim professional səviyyədə işləməyə kömək edir.
+
+
+
+2.What can you do with what you've learned so far?
+    İndiyə qədər öyrəndiklərimlə sadə template vebsayt düzəldib onun CSS hissəsində onu daha da düzgün formaya gətirə bilərəm.
+    Eyni zamanda Position, Flexbox vasitəsilə elementlərin yerini və dizaynını dəyişə bilərəm.
+    Və əgər hər hansı bir hissədə istisna vermək lazım gəlsə pseudo class vasitəsilə bunu rahatlıqla edə bilərəm. 

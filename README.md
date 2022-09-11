@@ -1,1 +1,1 @@
-# bookshop-flask
+# BSE-BOOKSHOP-PROJECT

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+
+
+    <!-- FonAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
+    <style>
+        .active{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    </style>
+</head>
+<body class="" style="min-height: 100%;">
+    <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+            <a class="navbar-brand text-white" href="/">KİTAB MAĞAZASI</a>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mt-2 me-3" id="cart">
+                        
+                        <div class="dropdown">
+                            <a class="btn outline-0 dropdown-toggle text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="listCount" class="text-light rounded-circle bg-danger px-2 px-2">2</span> <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width: 200px;">
+                                <div class="dropdownMenu">
+                                    <li class="dropdown-item d-flex justify-content-between container">
+                                        <p><i class="fa-solid fa-xmark text-danger" id="deleteBook"></i> Səfillər</p>
+                                        <p><span id="bookPrice">21</span>AZN</p>
+                                    </li>
+                                    <li class="dropdown-item d-flex justify-content-between container">
+                                        <p><i class="fa-solid fa-xmark text-danger" id="deleteBook"></i> 1984</p>
+                                        <p><span id="bookPrice">16</span>AZN</p>
+                                    </li>
+                                </div>
+                                <li><hr></li>
+                                <li class="d-flex justify-content-between container">
+                                    <p>Cəmi</p>
+                                    <p><span id="sumBook">  </span>AZN</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active == 'index' %}active{% endif %} text-white" aria-current="page" href="/">Ana səhifə</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Haqqımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Kateqoriyalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active == 'product' %}active{% endif %} text-white" href="/product">Ayın kitabı</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        {% if current_user.is_authenticated %}
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{current_user.first_name}} {{current_user.last_name}} 
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/logout">
+                                Log out
+                            </a></li>
+                        </ul>
+                        {% else %}
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            İstifadəçi
+                        </a>
+
+                        {% endif %}
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/login">Log in</a></li>
+                            <li><a class="dropdown-item" href="/register">Sign up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bildiri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-end" id="alertText">
+                    Məhsul səbətə əlavə edildi
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Bağla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer bg-info p-3 text-center text-white">
+        <p class="footer-text mb-0">
+            Copyright © E-mağaza layihəsi
+        </p>
+    </footer>
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Slick js -->
+    <script src="{{ url_for('static', filename='slick/slick.js') }}"></script>
+    <script src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    {% block scripts %}
+
+    {% endblock %}
+
+</body>
+</html>

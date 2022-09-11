@@ -1,0 +1,14 @@
+Answers:
+
+1. How Bootstrap Grid System Works?
+    Bootstrap Grid bir və ya bir neçə konteynr'ın daxilində olan row və column dan ibarətdir.
+    Bura da bir neçə vacib şərt var, məsələn columnlar birbaşa olaraq row'ların child'i olmalıdır, row'lar mütləq olaraq container in  içində olmalıdır.
+    Və row lar ancaq columnları saxlamaq üçün işlədilir.
+    Bootstrap Grid sistemi səhifəni default olaraq 12 bərabər columnlara bölür.
+    Və bu columnların sayəsində elementləri istədiyimiz kimi yerləşdirə bilərik.
+
+
+2. What are the advantages of Bootstrap Grid System?
+    Bootstrap Grid sistemi elementləri daha səliqəli və rahat response edilə bilən vəziyyətə salır.
+    Biz burda elementləri iki cür saxlaya bilərik, məsələn birinci halda səhifənin divarlarına yapışıq vəziyyətdə ikinci halda isə səhifənin divarlarından müəyyən məsafə saxlamaqla.
+    

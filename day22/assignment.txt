@@ -1,0 +1,97 @@
+-- Create database 
+CREATE DATABASE Book;
+
+-- Create Book_info table
+CREATE TABLE Book_info(
+    id int unsigned auto_increment primary key,
+    title varchar(255) not null,
+    author varchar(100) not null,
+    published_at date,
+    exist boolean default true,
+    genre varchar(100),
+    price decimal(6,2) default 10.00
+);
+
+
+-- *********Assignments*********
+
+-- 1.Add 6 different books to the table. (by INSERT function)
+INSERT INTO Book_info (title, author, published_at, exist, genre, price)
+VALUES ('1984', 'George Orwell', '1949-07-30', true, 'Classics', 12.4),
+       ('A Game of Thrones', 'George Martin', '1996-02-20', true, 'Fantasy', 10.0),
+       ('Wolf Hall', 'Hilary Mantel', '2009-03-09', true, 'Historical Fiction', 5.3),
+       ('Drakula', 'Bram Stoker', '1896-04-01', false, 'Horror', 8.0),
+       ('A Confederacy of Dunces', 'John Kenndy', '1980-10-21', true, 'Comedy', 18.2),
+       ('Gone Girl', 'Gillian Flynn', '2012-12-10', true, 'Detective and Mystery', 14.7);
+
+
+
+-- 2. Display the table with title and price fields. (SELECT)
+SELECT title, price FROM Book_info;
+
+
+
+-- 3. Display the table with title and price fields where price is higher than 10.00. (WHERE)
+SELECT title, price FROM Book_info WHERE price > 10;
+
+
+
+-- 4. Display the table with all fields where id is equal to 1. (WHERE)
+SELECT * FROM Book_info WHERE id = 1;
+
+
+
+-- 5. Display the table with all fields where id is equal to 1, 2 or 3. (IN)
+SELECT * FROM Book_info WHERE id IN (1, 2, 3);
+
+
+-- 6. Display the table with all fields where price is higher than 5.00 and lower than 15.00. (BETWEEN)
+SELECT * FROM Book_info WHERE price BETWEEN 5 AND 15;
+
+
+-- 7. Display the table with all fields where price is lower than 15.00 and where book is exist. (AND)
+SELECT * FROM Book_info WHERE price  < 15 AND exist = true;
+
+
+-- 8. Display the table with all fields where price is lower than 10.00 or id is equal 2. (OR)
+SELECT * FROM Book_info WHERE price < 10 OR id = 2;
+
+
+-- 9. Display the table with all fields where author start with 'Da'. (LIKE)
+SELECT * FROM Book_info WHERE author LIKE 'Da%';
+
+
+-- 10. Display the table with all fields where title contains 'ni'. (LIKE)
+SELECT * FROM Book_info WHERE title LIKE '%ni%';
+
+
+-- 11. Display the table with all fields where author's second and third letters are 'av'. (LIKE)
+SELECT * FROM Book_info WHERE author LIKE '__av%';
+
+
+-- 12. Display the table in ascending order of price. (ORDER BY)
+SELECT * FROM Book_info ORDER BY price ASC;
+
+
+-- 13. Display the table in descending order of id. (ORDER BY)
+SELECT * FROM Book_info ORDER BY price DESC;
+
+
+-- 14. Change value of exist to false where id equal to 2. (UPDATE)
+UPDATE Book_info SET exist = false WHERE id = 2;
+
+
+-- 15. Delete book which id equal to 3. (DELETE)
+DELETE FROM Book_info WHERE id = 3;
+
+
+-- 16. Delete the data in the table.
+DELETE FROM Book_info;
+
+
+-- 17. Delete the table.
+DROP TABLE Book_info;
+
+
+-- 18. Delete the database
+DROP DATABASE Book;

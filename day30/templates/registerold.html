@@ -1,0 +1,19 @@
+{% extends 'layout/layout.html' %}
+{% from '_formhelpers.html' import render_field %}
+
+{% block content %}
+
+<form action="" class="form" method="post">
+    {{ form.csrf_token }}
+    {{ render_field(form.first_name) }}
+    {{ render_field(form.last_name) }}
+    {{ render_field(form.email) }}
+    {{ render_field(form.username) }}
+    {{ render_field(form.password) }}
+
+    <button type="submit">
+        Register
+    </button>
+</form>
+
+{% endblock %}

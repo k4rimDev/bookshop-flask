@@ -1,0 +1,41 @@
+{% extends 'layout/layout.html' %}
+{% from '_formhelpers.html' import render_field %}
+
+
+{% block content %}
+<section class="my-auto" style="height: 85vh;">
+	<div class="container h-100">
+		<div class="row justify-content-sm-center h-100">
+			<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9 my-auto">
+				<div class="card shadow-lg">
+					<div class="card-body p-5">
+						<h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+						<form method="POST" class="needs-validation" novalidate="" autocomplete="off" action="">
+							{{ form.csrf_token }}
+							<div class="mb-3">
+								{{ render_field(form.username) }}
+							</div>
+
+							<div class="mb-3">
+								{{ render_field(form.password) }}
+							</div>
+
+							<div class="d-flex align-items-center">
+								<button type="submit" class="btn btn-primary ms-auto">
+									Login
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="card-footer py-3 border-0">
+						<div class="text-center">
+							Don't have an account? <a href="/register" class="text-dark">Create One</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
